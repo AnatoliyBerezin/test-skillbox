@@ -1,0 +1,225 @@
+@import "normalize.css/normalize";
+
+// utils
+@import "./utils/typography";
+@import "./utils/variables";
+@import "./utils/fonts";
+
+// components
+@import "./components/button.scss";
+@import "./components/checkbox.scss";
+@import "./components/list-dashed.scss";
+@import "./components/visually-hidden.scss";
+@import "./components/full-price.scss";
+@import "./components/credit-price.scss";
+@import "./components/for-first-price.scss";
+@import "./components/form.scss";
+
+
+
+body {
+    background-color: $color-bg;
+    font-family: $OpenSans;
+
+    padding: 55px 0 56px 0;
+
+    @media (min-width: $tablet) {
+        padding: 50px 0 158px;
+    }
+
+    @media (min-width: $desktop) {
+        padding: 70px 0 90px;
+    }
+}
+
+h1 {
+    @include typography-h1;
+    text-align: center;
+    margin: 0 0 81px 0;
+
+    @media (min-width: $tablet) {
+        margin: 0 0 76px 0;
+    }
+}
+
+
+.container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+
+    @media (min-width: $tablet) {
+        max-width: 710px;
+    }
+
+    @media (min-width: $desktop) {
+        max-width: 1170px;
+    }
+}
+
+.education {
+    display: flex;
+    flex-direction: column;
+
+    @media (min-width: $desktop) {
+        flex-direction: row;
+        box-shadow: 0px 2px 24px rgba(168, 175, 196, 0.3);
+    }
+
+    &__cost {
+        position: relative;
+        background-color: $blue;
+        width: 100%;
+        padding: 88px 0 40px;
+        
+        box-sizing: border-box;
+
+        @media (min-width: $tablet) {
+            padding: 130px 0 70px;
+        }
+    
+        @media (min-width: $desktop) {
+            padding: 244px 0 0 0;
+            width: 50%;
+        }
+
+        &-price {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+        }
+    }
+    
+    &__label {
+        background: linear-gradient(0deg, #000000, #000000), #7CE187;
+        font-family: $Roboto;
+        color: $white;
+
+        width: 110px;
+        height: 119px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        padding: 21px 0 0 0;
+        box-sizing: border-box;
+
+        clip-path: polygon(100% 0, 100% 80%, 50% 100%, 0 80%, 0 0);
+
+        position: absolute;
+        top: -54px;
+        left: 50%;
+        transform: translate(-50%);
+
+        @media (min-width: $tablet) {
+            top: -20px;
+        }
+        
+        &-text {
+            font-weight: bold;
+            font-size: 14px;
+            line-height: 16px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            color: $white;
+            margin: 0;
+        }
+
+        &-number {
+            font-size: 30px;
+            line-height: 28px;
+            letter-spacing: -0.75px;
+            margin: 7px 0 3px;
+        }
+
+        &-subtext {
+            font-size: 15px;
+            line-height: 24px;
+            letter-spacing: -0.5px;
+            margin: 0;
+            color: rgba($white, .7);
+        }
+    }
+
+    &__register {
+        box-sizing: border-box;
+        padding: 40px 25px 0;
+
+
+        @media (min-width: $tablet) {
+            max-width: 464px;
+            width: 100%;
+            padding: 70px 0 0 0;
+            margin: 0 auto;
+        }
+    
+        @media (min-width: $desktop) {
+            max-width: none;
+            width: 50%;
+            padding: 57px 132px 56px 85px;
+        }
+
+        &-title {
+            @include typography-h2;
+            margin: 0 0 24px;
+
+            @media (min-width: $tablet) {
+                text-align: center;
+            }
+            @media (min-width: $desktop) {
+                text-align: left;
+            }
+        }
+
+        &-info {
+            display: flex;
+            flex-direction: column;
+            margin: 28px 0 30px 0;
+
+            @media (min-width: $tablet) {
+                flex-direction: row;
+                justify-content: center;
+                margin: 52px 0 28px 0;
+            }
+        
+            @media (min-width: $desktop) {
+                margin: 44px 0 27px 0;
+                justify-content: center;
+            }
+            
+            &-text {
+                font-family: $Roboto;
+                font-size: 15px;
+                line-height: 18px;
+                letter-spacing: -0.5px;
+                color: #657195;
+                margin: 0 0 9px 0;
+                
+
+                @media (min-width: $tablet) {
+                    margin: 0 49px 0 0;
+                }
+            
+                @media (min-width: $desktop) {
+                    margin: 0 34px 0 0;
+                }
+
+                &:last-of-type {
+                    margin: 0;
+                }
+
+
+                &-number {
+                    display: inline-block;
+                    margin-left: 5px;
+                    color: $blue;
+                    font-weight: bold;
+                    font-size: 20px;
+                    line-height: 23px;
+                }
+            }
+        }
+    }
+}

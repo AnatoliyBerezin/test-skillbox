@@ -1,0 +1,22 @@
+@import '../utils/button-clean';
+@import '../utils/variables';
+
+.button {
+    @include button-clean;
+    width: 100%;
+    padding: 24.5px;
+    background-color: $blue;
+
+    font-family: $OpenSans;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
+    letter-spacing: 1px;
+    color: $white;
+    text-transform: uppercase;
+    cursor: pointer;
+
+    &[disabled] {
+        background-color: grey;
+    }
+}

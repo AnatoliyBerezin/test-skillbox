@@ -1,0 +1,36 @@
+.for-first-price {
+    text-align: center;
+    color: $white;
+
+    margin: 6px 0 31px;
+    &__number {
+        font-family: $RobotoSlab;
+        font-weight: 300;
+        font-size: 40px;
+        line-height: 53px;
+        letter-spacing: -2px;
+        margin: 0;
+
+        @media (min-width: $tablet) {
+            font-size: 50px;
+            line-height: 66px;
+        }
+    }
+    &__text {
+        font-family: $Roboto;
+        font-size: 15px;
+        line-height: 18px;
+        letter-spacing: -0.5px;
+        margin: 0;
+
+        @media (min-width: $tablet) {
+            font-size: 18px;
+            line-height: 21px;;
+        }
+    
+        @media (min-width: $desktop) {
+            font-size: 20px;
+            line-height: 23px;
+        }
+    }
+}

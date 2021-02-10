@@ -1,0 +1,45 @@
+.credit-price {
+    text-align: center;
+    color: $white;
+
+    margin: 10px 0 24px;
+
+    @media (min-width: $tablet) {
+        margin: 21px 0 34px;
+    }
+
+    @media (min-width: $desktop) {
+        margin: 6px 0 31px;
+    }
+    &__number {
+        font-family: $RobotoSlab;
+        font-weight: normal;
+        font-size: 56px;
+        line-height: 74px;
+        margin: 0;
+
+        @media (min-width: $tablet) {
+            font-size: 80px;
+            line-height: 106px;
+        }
+    
+    }
+    &__text {
+        font-family: $Roboto;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 21px;
+        letter-spacing: -0.5px;
+        margin: 0;
+
+        @media (min-width: $tablet) {
+            font-size: 20px;
+            line-height: 23px;
+        }
+    
+        @media (min-width: $desktop) {
+            font-size: 23px;
+            line-height: 27px;
+        }
+    }
+}

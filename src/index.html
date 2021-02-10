@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Тестовое задание</title>
+
+      <!-- build:css -->
+      <link rel="stylesheet" href="css/style.css">
+      <!-- endbuild -->
+</head>
+<body>
+    
+  <h1>
+    Стоимость обучения
+  </h1>
+
+  <div class="container">
+
+    <div class="education">
+      <div class="education__cost">
+
+        <div class="education__label">
+          <p class="education__label-text">
+            скидка
+          </p>
+          <p class="education__label-number">
+            40%
+          </p>
+          <p class="education__label-subtext">
+            первым 20
+          </p>
+        </div>
+
+        <div class="education__cost-price">
+
+          <div class="full-price">
+            <p class="full-price__text">
+              Полная стоимость курса
+            </p>
+            <p class="full-price__number">
+              50 000₽
+            </p>
+          </div>
+
+          <div class="credit-price">
+            <p class="credit-price__number">
+              2 900₽
+            </p>
+            <p class="credit-price__text">
+              Рассрочка без первого взноса
+            </p>
+          </div>
+
+          <div class="for-first-price">
+            <p class="for-first-price__number">
+              29 000₽
+            </p>
+            <p class="for-first-price__text">
+              Для первых 20-ти
+            </p>
+          </div>
+          
+        </div>
+      </div>
+
+      <div class="education__register">
+        <h2 class="education__register-title">
+          Запишитесь на курс
+        </h2>
+
+        <ul class="list-dashed">
+          <li class="list-dashed__item">
+            Телефон
+          </li>
+          <li class="list-dashed__item">
+            Телефон
+          </li>
+          <li class="list-dashed__item">
+            Телефон
+          </li>
+          <li class="list-dashed__item">
+            Телефон
+          </li>
+        </ul>
+
+        <div class="education__register-info">
+          <p class="education__register-info-text">
+            Старт курса: <span class="education__register-info-text-number"> 7 сентября</span>
+          </p>
+          <p class="education__register-info-text">
+            Осталось: <span class="education__register-info-text-number"> 19 мест</span>
+          </p>
+        </div>
+
+
+        <form action="" method="POST" class="education__register-form form" data-form>
+          <div class="form__field">
+            <label for="name" class="visually-hidden">Имя</label>
+            <input type="text" name="name" id="name" placeholder="Имя" title="Введите одно слово на русском" pattern="^[А-Яа-я]+$" class="form__input" data-form-input="name">
+            <span class="form__field-message">
+              Поле не заполнено!
+            </span>
+          </div>
+
+          <div class="form__field">
+            <label for="name" class="visually-hidden">Телефон</label>
+            <input type="tel" name="tel" placeholder="Телефон" class="form__input" title="Номер может сожержать от 10 до 14 цифр" pattern="^(\s*)?(\+)?([- _():=+]?\d[- _():=+]?){10,14}(\s*)?$" data-form-input="tel">
+            <span class="form__field-message">
+              Поле не заполнено!
+            </span>
+          </div>
+
+          <div class="form__field">
+            <label for="name" class="visually-hidden">Email</label>
+            <input type="email" name="email" placeholder="Email" class="form__input" data-form-input="email">
+            <span class="form__field-message">
+              Поле не заполнено!
+            </span>
+          </div>
+            
+          <button type="submit" class="button" data-form-submit>Записаться</button>
+
+          <label class="check">
+            <input type="checkbox" class="check__input" data-form-check>
+            <span class="check__box"></span>
+            <span class="check__text">
+              Я согласен с условиями обработки <br>
+              <a href="#" class="check__text-link">персональных данных</a>
+            </span>
+          </label>
+        </form>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- build:js -->
+    <script src="js/script.js"></script>
+  <!-- endbuild  -->
+</body>
+</html>

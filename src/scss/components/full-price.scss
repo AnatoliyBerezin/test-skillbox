@@ -1,0 +1,38 @@
+.full-price {
+    text-align: center;
+    &__text {
+        font-family: $Roboto;
+        font-size: 15px;
+        line-height: 18px;
+        letter-spacing: -0.5px;
+        color: rgba($white, .5);
+        margin: 0 0 4px 0;
+    }
+    &__number {
+        font-family: $RobotoSlab;
+        font-weight: 300;
+        font-size: 36px;
+        line-height: 47px;
+        letter-spacing: -2px;
+        color: rgba($white, .4);
+        margin: 0;
+        
+        position: relative;
+
+        @media (min-width: $tablet) {
+            font-size: 38px;
+            line-height: 50px;
+        }
+    
+
+        &::before {
+            content: "";
+            width: calc(100% - 26px);
+            height: 2px;
+            background-color: #8B89FF;
+            position: absolute;
+            top: 50%;
+            left: 13px;
+        }
+    }
+}

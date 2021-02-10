@@ -1,0 +1,41 @@
+@import "variables";
+
+@mixin typography-h1 {
+    font-family: $Roboto;
+    font-weight: bold;
+    font-style: normal;
+    letter-spacing: -0.5px;
+
+    font-size: 38px;
+    line-height: 44px;
+
+    @media (min-width: $tablet ) {
+        font-size: 45px;
+        line-height: 53px;
+    }
+
+    @media (min-width: $desktop ) {
+        font-size: 55px;
+        line-height: 32px;
+    }
+}
+
+@mixin typography-h2 {
+    font-family: $Roboto;
+    font-style: normal;
+    font-weight: bold;
+    letter-spacing: -0.5px;
+
+    font-size: 30px;
+    line-height: 36px;
+
+    @media (min-width: $tablet ) {
+        font-size: 38px;
+        line-height: 40px;
+    }
+
+    @media (min-width: $desktop ) {
+        font-size: 34px;
+        line-height: 40px;
+    }
+}

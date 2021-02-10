@@ -1,0 +1,22 @@
+{
+  "private": true,
+  "scripts": {
+    "start": "gulp",
+    "build": "gulp build"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.17.5",
+    "del": "^2.2.2",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-clean-css": "^2.0.13",
+    "gulp-concat-css": "^3.1.0",
+    "gulp-htmlmin": "^3.0.0",
+    "gulp-resolve-url": "0.0.2",
+    "gulp-sass": "^4.1.0",
+    "gulp-sourcemaps": "^2.1.1",
+    "gulp-uglify-es": "^2.0.0",
+    "node-normalize-scss": "^8.1.2",
+    "node-sass": "^5.0.0"
+  }
+}

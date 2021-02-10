@@ -1,0 +1,48 @@
+@import "../utils/variables";
+@import "../utils/svg-encode";
+
+.check {
+    margin-top: 34px;
+    display: block;
+    padding-left: 40px;
+    cursor: pointer;
+
+    &__input {
+        appearance: none;
+        position: absolute;
+        left: -9999px;
+    }
+
+    &__box {
+        position: absolute;
+        margin-left: -40px;
+        width: 24px;
+        height: 24px;
+        border: 2px solid $blue;
+        box-sizing: border-box;
+    }
+
+    &__input:checked + &__box {
+        background-color: $blue;
+        background-image: svg-encode('<svg width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5.01037 10.8106L0.301116 6.03491C0.0243469 5.75468 0.0224401 5.29839 0.296857 5.01576C0.571273 4.73312 1.0181 4.73118 1.29487 5.01141L5.47389 9.24564L12.851 0.274851C13.1069 -0.0253972 13.5528 -0.0568768 13.8468 0.204539C14.1409 0.465955 14.1717 0.921273 13.9157 1.22152L6.04174 10.7715C5.91445 10.9219 5.73161 11.0114 5.53706 11.0187C5.32114 11.0194 5.14256 10.9444 5.01037 10.8106Z" fill="white"/></svg>');
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    &__text {
+        font-family: $OpenSans;
+        font-size: 14px;
+        line-height: 21px;
+        letter-spacing: -0.5px;
+        color: #657195;
+
+        &-link {
+            color: $blue;
+            text-decoration: none;
+
+            &:hover {
+                color: #0300ff;
+            }
+        }
+    }
+}
