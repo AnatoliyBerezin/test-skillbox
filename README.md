@@ -4,4 +4,4 @@
 
 * `npm run start` - запуск проекта (с поддержкой live reload)
 
-* `npm run start` - сборка проекта
+* `npm run build` - сборка проекта
